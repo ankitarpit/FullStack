@@ -29,7 +29,7 @@ class Klass extends React.Component<KlassProps, KlassState> {
         const { age } = this.props;
         return (
             <div className="EmployeeDetails">
-                <h1>State Class Component</h1>
+                <h2>State Class Component</h2>
 
                 <input
                     type="text"
@@ -38,6 +38,7 @@ class Klass extends React.Component<KlassProps, KlassState> {
                     onChange={this.handleInputChange}
                     placeholder="Name"
                 />
+                <br />
                 <input
                     type="email"
                     name="email"
@@ -45,6 +46,7 @@ class Klass extends React.Component<KlassProps, KlassState> {
                     onChange={this.handleInputChange}
                     placeholder="Email"
                 />
+                <br />
                 <button onClick={() => alert(`Name: ${name}, Email: ${email}, Age : ${age}`)}>Show Details</button>
                 <p>Name: {name}</p>
                 <p>Email: {email}</p>
